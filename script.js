@@ -23,7 +23,7 @@ const PROJECTS = [
     challenge: 'The beauty market is saturated with either clinical minimalism or maximalist luxury. Luvana needed to occupy a distinct third space: confident, natural, and accessible — premium without being pretentious, warm without being cheap.',
     process: "I defined the brand around one truth: 'Confidence in your natural glow.' From there I built a palette of deep plum, orchid, petal blush, and dusty slate — colours that feel skincare-specific without mimicking competitors. Typography paired a refined serif for headlines with a clean humanist sans for body copy. Every asset was designed to scale from a 1080×1080 Instagram post to physical packaging.",
     outcome: 'A complete identity system: logo suite across all lockups, full colour and typography guide, packaging mockups, brand voice and messaging framework, and a 60-day social media content kit with 40+ ready-to-use templates.',
-    metrics: ['Full identity in 3 weeks', 'Packaging print-ready', '40+ social templates', 'Portfolio centrepiece'],
+    metrics: ['Full identity in 3 weeks', 'Packaging print-ready', '20+ social templates', 'Portfolio centrepiece'],
     socialDesigns: [
       { label: 'Product Launch Post', bg: 'linear-gradient(135deg,#1a0d2e 0%,#9333EA30 100%)', accent: '#9333EA', icon: '✦', format: 'Feed Post' },
       { label: 'Skincare Tip Card',   bg: 'linear-gradient(135deg,#2d1060 0%,#F9A8D418 100%)', accent: '#F9A8D4', icon: '✦', format: 'Carousel' },
