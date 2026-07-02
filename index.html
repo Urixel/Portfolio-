@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Praise Emetie — Brand Identity Designer & Creative Strategist. Helping startups and businesses communicate with clarity, confidence, and visual precision." />
+  <meta name="keywords" content="brand identity designer, creative strategist, logo design, visual systems, social media design, packaging design" />
+  <meta name="author" content="Praise Emetie" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Praise Emetie — Brand Identity Designer & Creative Strategist" />
+  <meta property="og:description" content="Helping startups and businesses communicate with clarity, confidence, and visual precision." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://praiseemetie.github.io" />
+  <meta property="og:image" content="images/og-image.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Praise Emetie — Brand Identity Designer" />
+  <meta name="twitter:description" content="Brand Identity Designer & Creative Strategist" />
+
+  <title>Praise Emetie — Brand Identity Designer & Creative Strategist</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════
+     NAVIGATION
+════════════════════════════════════════════════════════════ -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo" id="nav-logo-btn" aria-label="Home">
+      <div class="nav-logo-mark">P</div>
+      <span class="nav-logo-name">Praise Emetie</span>
+    </a>
+
+    <div class="desktop-nav" role="menubar">
+      <a href="#work"          class="nav-link" role="menuitem">Work</a>
+      <a href="#social-designs" class="nav-link" role="menuitem">Social Media</a>
+      <a href="#about"         class="nav-link" role="menuitem">About</a>
+      <a href="#services"      class="nav-link" role="menuitem">Services</a>
+      <a href="#contact"       class="nav-link" role="menuitem">Contact</a>
+      <a href="images/praise-emetie-cv.pdf" download class="btn btn-primary btn-sm">Download CV</a>
+    </div>
+
+    <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+      <span class="hamburger-icon">☰</span>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <a href="#work"          class="mobile-nav-link">Work</a>
+    <a href="#social-designs" class="mobile-nav-link">Social Media</a>
+    <a href="#about"         class="mobile-nav-link">About</a>
+    <a href="#services"      class="mobile-nav-link">Services</a>
+    <a href="#contact"       class="mobile-nav-link">Contact</a>
+    <a href="images/praise-emetie-cv.pdf" download class="btn btn-primary" style="margin-top:18px;display:block;text-align:center;">Download CV</a>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════════
+     MAIN — home page wrapper
+════════════════════════════════════════════════════════════ -->
+<main id="home-page">
+
+  <!-- ── HERO ─────────────────────────────────────────────── -->
+  <section class="hero" aria-label="Introduction">
+    <div class="hero-inner">
+      <div class="availability-badge">
+        <span class="pulse-dot" aria-hidden="true"></span>
+        <span>AVAILABLE FOR NEW PROJECTS</span>
+      </div>
+
+      <h1 class="hero-heading">
+        I Design <em id="hero-word" class="hero-word">Brands</em><br>That Solve Problems.
+      </h1>
+
+      <p class="hero-sub">
+        Brand Identity Designer &amp; Creative Strategist helping startups and businesses communicate with clarity, confidence, and visual precision.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="#work" class="btn btn-primary">View Work <span aria-hidden="true">→</span></a>
+        <a href="images/praise-emetie-cv.pdf" download class="btn btn-outline">Download Resume</a>
+        <a href="#contact" class="btn btn-ghost">Contact Me</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item"><span class="stat-val">3+</span><span class="stat-label">Years Experience</span></div>
+        <div class="stat-item"><span class="stat-val">2</span><span class="stat-label">Featured Projects</span></div>
+        <div class="stat-item"><span class="stat-val">100%</span><span class="stat-label">Client Satisfaction</span></div>
+        <div class="stat-item"><span class="stat-val">Remote</span><span class="stat-label">Worldwide</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TICKER ────────────────────────────────────────────── -->
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker-track" id="ticker-track">
+      <!-- injected by JS -->
+    </div>
+  </div>
+
+  <!-- ── WORK ─────────────────────────────────────────────── -->
+  <section id="work" class="section work-section" aria-label="Featured work">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div>
+          <p class="section-label">Featured Work</p>
+          <h2 class="section-title">Selected<br>Case Studies</h2>
+        </div>
+        <p class="section-desc">Each project is a story of a communication problem solved — through research, strategy, and intentional design execution.</p>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+        <!-- injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SOCIAL SHOWCASE ───────────────────────────────────── -->
+  <section id="social-designs" class="section social-section" aria-label="Social media design work">
+    <div class="container">
+      <div class="social-header fade-in">
+        <div>
+          <p class="section-label" style="color:#10B981">Social Media Design</p>
+          <h2 class="section-title">Content Systems<br>at Scale</h2>
+        </div>
+        <div class="social-filters" role="group" aria-label="Filter by project">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="luvana">Luvana</button>
+          <button class="filter-btn" data-filter="the-cloud-guys">The Cloud Guys</button>
+        </div>
+      </div>
+
+      <div class="social-grid" id="social-grid">
+        <!-- injected by JS -->
+      </div>
+
+      <p class="social-hint fade-in">Add your real social media design images by replacing the placeholder cards above.</p>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ─────────────────────────────────────────────── -->
+  <section id="about" class="section about-section" aria-label="About Praise Emetie">
+    <div class="container">
+      <div class="fade-in">
+        <p class="section-label">About</p>
+        <h2 class="section-title" style="margin-bottom:64px">The designer behind the work.</h2>
+      </div>
+
+      <div class="about-photo-grid">
+        <!-- Photo column -->
+        <div class="about-photo-col fade-in">
+          <div class="photo-frame" id="photo-frame" aria-label="Profile photo placeholder">
+            <!-- When you have your photo, replace this div's contents with: <img src="images/praise-photo.jpg" alt="Praise Emetie" /> -->
+            <div class="photo-placeholder">
+              <div class="photo-placeholder-icon">☺</div>
+              <p class="photo-placeholder-text">Your Photo Here</p>
+              <p class="photo-placeholder-sub">Replace with your image</p>
+            </div>
+            <div class="photo-corner-tl" aria-hidden="true"></div>
+            <div class="photo-corner-br" aria-hidden="true"></div>
+          </div>
+
+          <div class="name-card">
+            <div class="name-card-name">Praise Emetie</div>
+            <div class="name-card-role">Brand Identity Designer &amp; Creative Strategist</div>
+            <div class="name-card-status">
+              <span class="pulse-dot" aria-hidden="true"></span>
+              <span>Available for new projects</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bio column -->
+        <div class="about-bio-col fade-in" style="transition-delay:.15s">
+          <p class="about-para about-para--bright">
+            I'm Praise — a Brand Identity Designer and Creative Strategist with 3+ years of experience helping startups and businesses build visual languages that work as hard as the products they represent.
+          </p>
+          <p class="about-para">
+            My background in Human Anatomy gives me an unusual perspective on design: everything has structure — systems beneath surfaces. I approach brand identity the same way, building from the inside out, ensuring every visual decision serves a communication goal rather than just looking good in isolation.
+          </p>
+          <p class="about-para">
+            I integrate AI tools into my creative workflow not to replace thinking, but to accelerate it — faster moodboards, sharper concept exploration, more time spent on what matters: the strategy behind the aesthetics.
+          </p>
+
+          <div class="philosophy-list">
+            <div class="philosophy-item">
+              <div class="philosophy-icon" aria-hidden="true">◈</div>
+              <div>
+                <h3 class="philosophy-title">Strategy First</h3>
+                <p class="philosophy-desc">Every design decision starts with a question: what communication problem does this solve?</p>
+              </div>
+            </div>
+            <div class="philosophy-item">
+              <div class="philosophy-icon" aria-hidden="true">⊞</div>
+              <div>
+                <h3 class="philosophy-title">Systems Thinking</h3>
+                <p class="philosophy-desc">Brands aren't logos. They're living systems that need to be consistent, scalable, and resilient.</p>
+              </div>
+            </div>
+            <div class="philosophy-item">
+              <div class="philosophy-icon" aria-hidden="true">◎</div>
+              <div>
+                <h3 class="philosophy-title">AI-Augmented</h3>
+                <p class="philosophy-desc">I use AI to think faster, not think less. The strategy stays human.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SERVICES ──────────────────────────────────────────── -->
+  <section id="services" class="section services-section" aria-label="Services">
+    <div class="container">
+      <div class="fade-in">
+        <p class="section-label">Services</p>
+        <h2 class="section-title" style="margin-bottom:56px">What I Bring to the Table</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card fade-in">
+          <div class="service-icon" aria-hidden="true">◈</div>
+          <h3 class="service-title">Brand Identity Design</h3>
+          <p class="service-desc">Logo systems, visual language, and identity guidelines that make brands recognizable and resilient.</p>
+        </div>
+        <div class="service-card fade-in" style="transition-delay:.07s">
+          <div class="service-icon" aria-hidden="true">⊞</div>
+          <h3 class="service-title">Visual Systems</h3>
+          <p class="service-desc">Scalable design systems — colour, type, spacing, and components — built for teams that move fast.</p>
+        </div>
+        <div class="service-card fade-in" style="transition-delay:.14s">
+          <div class="service-icon" aria-hidden="true">◎</div>
+          <h3 class="service-title">Creative Direction</h3>
+          <p class="service-desc">Strategic visual direction for campaigns, launches, and product storytelling.</p>
+        </div>
+        <div class="service-card fade-in" style="transition-delay:.21s">
+          <div class="service-icon" aria-hidden="true">◻</div>
+          <h3 class="service-title">Social Media Design</h3>
+          <p class="service-desc">Content systems and template libraries that keep brands consistent at scale.</p>
+        </div>
+        <div class="service-card fade-in" style="transition-delay:.28s">
+          <div class="service-icon" aria-hidden="true">⬡</div>
+          <h3 class="service-title">Packaging Design</h3>
+          <p class="service-desc">Shelf-ready packaging that communicates brand values at a glance.</p>
+        </div>
+        <div class="service-card fade-in" style="transition-delay:.35s">
+          <div class="service-icon" aria-hidden="true">⟡</div>
+          <h3 class="service-title">AI-Assisted Workflows</h3>
+          <p class="service-desc">Faster ideation, moodboarding, and prototyping with AI integrated into the creative process.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIALS ──────────────────────────────────────── -->
+  <section class="section testimonials-section" aria-label="Client testimonials">
+    <div class="container">
+      <div class="fade-in" style="text-align:center;margin-bottom:56px">
+        <p class="section-label">Testimonials</p>
+        <h2 class="section-title">What Clients Say</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card fade-in">
+          <div class="testimonial-quote-mark" aria-hidden="true">"</div>
+          <p class="testimonial-text">Praise didn't just design a logo — she gave us a language. Every touchpoint now feels intentional and alive.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background:#0EA5E9">C</div>
+            <div>
+              <div class="testimonial-name">Community Lead</div>
+              <div class="testimonial-role">The Cloud Guys</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card fade-in" style="transition-delay:.1s">
+          <div class="testimonial-quote-mark" aria-hidden="true">"</div>
+          <p class="testimonial-text">Fast, strategic, and deeply creative. Working with Praise felt like having a full creative director on demand.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background:#9333EA">L</div>
+            <div>
+              <div class="testimonial-name">Founder</div>
+              <div class="testimonial-role">Luvana Skincare</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card fade-in" style="transition-delay:.2s">
+          <div class="testimonial-quote-mark" aria-hidden="true">"</div>
+          <p class="testimonial-text">She understood what we were building before we'd finished explaining it. That instinct is rare.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background:#10B981">S</div>
+            <div>
+              <div class="testimonial-name">Startup Founder</div>
+              <div class="testimonial-role">Tech Brand Client</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ────────────────────────────────────────────── -->
+  <section class="section skills-section" aria-label="Skills and tools">
+    <div class="container">
+      <div class="fade-in" style="margin-bottom:56px">
+        <p class="section-label">Expertise</p>
+        <h2 class="section-title">Skills &amp; Tools</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group fade-in">
+          <h3 class="skill-group-title">Design</h3>
+          <ul class="skill-list">
+            <li>Brand Identity</li><li>Logo Design</li><li>Typography</li>
+            <li>Visual Systems</li><li>Packaging Design</li><li>Social Media Design</li><li>UI Direction</li>
+          </ul>
+        </div>
+        <div class="skill-group fade-in" style="transition-delay:.1s">
+          <h3 class="skill-group-title">Strategy</h3>
+          <ul class="skill-list">
+            <li>Brand Strategy</li><li>Competitive Analysis</li><li>Positioning</li>
+            <li>Creative Briefing</li><li>Content Strategy</li>
+          </ul>
+        </div>
+        <div class="skill-group fade-in" style="transition-delay:.2s">
+          <h3 class="skill-group-title">Tools</h3>
+          <ul class="skill-list">
+            <li>Figma</li><li>Adobe Illustrator</li><li>Adobe Photoshop</li>
+            <li>Framer</li><li>Midjourney</li><li>Adobe InDesign</li>
+          </ul>
+        </div>
+        <div class="skill-group fade-in" style="transition-delay:.3s">
+          <h3 class="skill-group-title">Communication</h3>
+          <ul class="skill-list">
+            <li>Client Presentations</li><li>Brand Guidelines</li>
+            <li>Stakeholder Management</li><li>Creative Direction</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ───────────────────────────────────────────── -->
+  <section id="contact" class="section contact-section" aria-label="Contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="fade-in">
+          <p class="section-label">Contact</p>
+          <h2 class="contact-heading">Let's Build Something Worth Remembering.</h2>
+          <p class="contact-sub">Open to brand identity projects, creative direction work, and full-time remote design roles. I work across time zones.</p>
+
+          <ul class="contact-info-list" aria-label="Contact information">
+            <li class="contact-info-item">
+              <div class="contact-info-icon" aria-hidden="true">✉</div>
+              <div>
+                <span class="contact-info-label">Email</span>
+                <a href="mailto:praise@praiseemetie.com" class="contact-info-val">praise@praiseemetie.com</a>
+              </div>
+            </li>
+            <li class="contact-info-item">
+              <div class="contact-info-icon" aria-hidden="true">in</div>
+              <div>
+                <span class="contact-info-label">LinkedIn</span>
+                <a href="https://linkedin.com/in/praiseemetie" target="_blank" rel="noopener" class="contact-info-val">linkedin.com/in/praiseemetie</a>
+              </div>
+            </li>
+            <li class="contact-info-item">
+              <div class="contact-info-icon" aria-hidden="true">Be</div>
+              <div>
+                <span class="contact-info-label">Behance</span>
+                <a href="https://behance.net/praiseemetie" target="_blank" rel="noopener" class="contact-info-val">behance.net/praiseemetie</a>
+              </div>
+            </li>
+            <li class="contact-info-item">
+              <div class="contact-info-icon" aria-hidden="true">◎</div>
+              <div>
+                <span class="contact-info-label">Location</span>
+                <span class="contact-info-val">Nigeria · Remote-first · Global</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="fade-in" style="transition-delay:.15s">
+          <div class="contact-form-wrap" id="contact-form-wrap">
+            <div class="form-field">
+              <label for="contact-name" class="form-label">Your Name</label>
+              <input type="text" id="contact-name" class="form-input" placeholder="Alex Chen" autocomplete="name" />
+            </div>
+            <div class="form-field">
+              <label for="contact-email" class="form-label">Email Address</label>
+              <input type="email" id="contact-email" class="form-input" placeholder="alex@company.com" autocomplete="email" />
+            </div>
+            <div class="form-field">
+              <label for="contact-message" class="form-label">Message</label>
+              <textarea id="contact-message" class="form-input form-textarea" rows="5" placeholder="Tell me about your project..."></textarea>
+            </div>
+            <button type="button" id="contact-submit" class="btn btn-primary btn-block">Send Message →</button>
+          </div>
+
+          <div class="contact-success" id="contact-success" aria-live="polite" hidden>
+            <div class="contact-success-icon" aria-hidden="true">✓</div>
+            <h3 class="contact-success-title">Message Sent</h3>
+            <p class="contact-success-sub">I'll be in touch within 24 hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main><!-- /#home-page -->
+
+<!-- ═══════════════════════════════════════════════════════════
+     CASE STUDY PAGE  (hidden until a project is opened)
+════════════════════════════════════════════════════════════ -->
+<div id="case-study-page" hidden aria-label="Case study">
+
+  <!-- Hero -->
+  <div class="cs-hero" id="cs-hero">
+    <div class="container">
+      <button class="cs-back-btn" id="cs-back-btn" aria-label="Back to work">← Back to Work</button>
+
+      <div class="cs-badges" id="cs-badges"></div>
+      <h1 class="cs-title" id="cs-title"></h1>
+      <p class="cs-summary" id="cs-summary"></p>
+      <div class="cs-tags" id="cs-tags"></div>
+    </div>
+  </div>
+
+  <!-- Metrics bar -->
+  <div class="cs-metrics-bar">
+    <div class="container">
+      <div class="cs-metrics" id="cs-metrics"></div>
+    </div>
+  </div>
+
+  <!-- Body -->
+  <div class="cs-body">
+    <div class="cs-body-inner">
+
+      <!-- Sections 01 02 03 -->
+      <div class="cs-text-section fade-in">
+        <div class="cs-section-head">
+          <div class="cs-num" id="cs-num-01">01</div>
+          <h2 class="cs-section-title">The Challenge</h2>
+        </div>
+        <p class="cs-section-body" id="cs-challenge"></p>
+      </div>
+
+      <div class="cs-text-section fade-in" style="transition-delay:.08s">
+        <div class="cs-section-head">
+          <div class="cs-num" id="cs-num-02">02</div>
+          <h2 class="cs-section-title">Process &amp; Strategy</h2>
+        </div>
+        <p class="cs-section-body" id="cs-process"></p>
+      </div>
+
+      <div class="cs-text-section fade-in" style="transition-delay:.16s">
+        <div class="cs-section-head">
+          <div class="cs-num" id="cs-num-03">03</div>
+          <h2 class="cs-section-title">Outcome</h2>
+        </div>
+        <p class="cs-section-body" id="cs-outcome"></p>
+      </div>
+
+      <!-- Social designs in case study -->
+      <div class="cs-text-section fade-in" style="transition-delay:.24s">
+        <div class="cs-section-head">
+          <div class="cs-num">04</div>
+          <h2 class="cs-section-title">Social Media System</h2>
+        </div>
+        <p class="cs-section-body">The brand identity extended into a full social media content system — consistent visual language across all formats and platforms.</p>
+        <div class="cs-social-grid" id="cs-social-grid"></div>
+      </div>
+
+      <!-- Identity mockup placeholder -->
+      <div class="cs-mockup-placeholder fade-in" id="cs-mockup">
+        <div class="cs-mockup-inner">
+          <div class="cs-mockup-logo" id="cs-mockup-logo"></div>
+          <p class="cs-mockup-label">Brand Identity Mockups</p>
+          <p class="cs-mockup-sub">Replace with your design images</p>
+        </div>
+      </div>
+
+      <!-- Behance link -->
+      <div class="cs-behance-wrap fade-in">
+        <a href="https://behance.net/praiseemetie" target="_blank" rel="noopener" class="btn btn-outline cs-behance-btn" id="cs-behance-link">
+          View on Behance ↗
+        </a>
+      </div>
+
+    </div><!-- /.cs-body-inner -->
+  </div><!-- /.cs-body -->
+
+  <!-- Prev / Next nav -->
+  <div class="cs-nav-bar">
+    <div class="container">
+      <div class="cs-nav-grid">
+        <button class="cs-nav-btn cs-nav-prev" id="cs-prev-btn" aria-label="Previous project" hidden>
+          <span class="cs-nav-dir">← PREVIOUS</span>
+          <span class="cs-nav-name" id="cs-prev-name"></span>
+        </button>
+        <div class="cs-nav-spacer" id="cs-prev-spacer"></div>
+        <button class="cs-nav-btn cs-nav-next" id="cs-next-btn" aria-label="Next project" hidden>
+          <span class="cs-nav-dir">NEXT →</span>
+          <span class="cs-nav-name" id="cs-next-name"></span>
+        </button>
+        <div class="cs-nav-spacer" id="cs-next-spacer"></div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /#case-study-page -->
+
+<!-- ═══════════════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════════════ -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container footer-inner">
+    <a href="#" class="footer-logo" id="footer-logo-btn" aria-label="Back to top">
+      <div class="nav-logo-mark">P</div>
+      <span class="footer-logo-name">Praise Emetie</span>
+    </a>
+
+    <p class="footer-copy">© 2024 Praise Emetie · Brand Identity &amp; Creative Strategy</p>
+
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="https://linkedin.com/in/praiseemetie" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+      <a href="https://behance.net/praiseemetie" target="_blank" rel="noopener" class="footer-link">Behance</a>
+      <a href="mailto:praise@praiseemetie.com" class="footer-link">Email</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
