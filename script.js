@@ -397,28 +397,68 @@ function buildSocialCard(design, project) {
 
 function initSocialShowcase() {
   const grid = $('#social-grid');
+  const prevBtn = $('#social-prev-btn');
+  const nextBtn = $('#social-next-btn');
+  const indicator = $('#page-indicator');
 
-  // Build all cards
+  const CARDS_PER_PAGE = 4;
+
+  // Collect all designs from both projects into one flat list
+  const allDesigns = [];
   PROJECTS.forEach(project => {
     project.socialDesigns.forEach(design => {
-      grid.appendChild(buildSocialCard(design, project));
+      allDesigns.push({ design, project });
     });
   });
 
-  // Filter buttons
-  $$('.filter-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      $$('.filter-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
+  const totalPages = Math.ceil(allDesigns.length / CARDS_PER_PAGE);
+  let currentPage = 1;
 
-      const filter = btn.dataset.filter;
-
-      $$('.social-card').forEach(card => {
-        const show = filter === 'all' || card.dataset.project === filter;
-        card.classList.toggle('hidden-card', !show);
-      });
-    });
+  // Build all cards once and store them
+  const allCards = allDesigns.map(({ design, project }) => {
+    const card = buildSocialCard(design, project);
+    grid.appendChild(card);
+    return card;
   });
+
+  function showPage(page) {
+    const start = (page - 1) * CARDS_PER_PAGE;
+    const end = start + CARDS_PER_PAGE;
+
+    // Show only cards for the current page
+    allCards.forEach((card, i) => {
+      card.classList.toggle('hidden-card', i < start || i >= end);
+    });
+
+    // Update indicator
+    indicator.textContent = `${page} / ${totalPages}`;
+
+    // Update button states
+    prevBtn.disabled = page === 1;
+    nextBtn.disabled = page === totalPages;
+
+    // Scroll to top of section smoothly
+    $('#social-designs').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  // Previous button
+  prevBtn.addEventListener('click', () => {
+    if (currentPage > 1) {
+      currentPage--;
+      showPage(currentPage);
+    }
+  });
+
+  // Next button
+  nextBtn.addEventListener('click', () => {
+    if (currentPage < totalPages) {
+      currentPage++;
+      showPage(currentPage);
+    }
+  });
+
+  // Show first page on load
+  showPage(1);
 }
 
 /* ─── CASE STUDY ─────────────────────────────────────────── */
