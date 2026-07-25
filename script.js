@@ -50,8 +50,6 @@ const PROJECTS = [
     socialDesigns: [
       { label: 'Community Announcement', image: 'images/cloud-guys-social-1.jpg', accent: '#0EA5E9', icon: '☁', format: 'Feed Post' },
       { label: 'Cloud Tip of the Day',  image: 'images/cloud-guys-social-2.jpg', accent: '#38BDF8', icon: '☁', format: 'Feed Post' },
-      { label: 'Property Listing Social Campaign',      image: 'images/real-estate-1.jpg', accent: '#7DD3FC', icon: '☁', format: 'Carousel' },
-      { label: 'Luxury Real Estate Social Campaign',      image: 'images/real-estate-2.jpg', accent: '#0EA5E9', icon: '☁', format: 'Carousel' },
     ],
   },
 ];
@@ -535,9 +533,9 @@ function populateCaseStudy(project) {
 
   // ── Social designs in CS
   const csSocialGrid = $('#cs-social-grid');
-  csSocialGrid.innerHTML = '';
+csSocialGrid.innerHTML = '';
+if (project.id !== 'luvana') {
   project.socialDesigns.forEach(d => {
-    const card = el('div', { class: 'cs-social-card' });
 
     const visual = el('div', {
       class: 'cs-social-card-visual',
@@ -582,6 +580,7 @@ function populateCaseStudy(project) {
     card.append(visual, meta);
     csSocialGrid.appendChild(card);
   });
+}
 
   // ── Mockup placeholder
   const mockup = $('#cs-mockup');
