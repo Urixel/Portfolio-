@@ -48,8 +48,8 @@ const PROJECTS = [
     outcome: 'A full community brand system: primary logo with variants, a social media identity system, profile and banner templates across platforms, content card templates, community swag concepts, and a tone-of-voice guide that helps moderators and content creators stay on-brand.',
     metrics: ['Community of 500+ members', 'Cross-platform brand consistency', 'Recognition within 2 weeks of launch', 'Active daily content system'],
     socialDesigns: [
-      { label: 'Community Announcement', bg: 'linear-gradient(135deg,#020b18 0%,#0EA5E925 100%)', accent: '#0EA5E9', icon: '☁', format: 'Feed Post' },
-      { label: 'Cloud Tip of the Day',  bg: 'linear-gradient(135deg,#041525 0%,#38BDF822 100%)', accent: '#38BDF8', icon: '☁', format: 'Carousel' },
+      { label: 'Community Announcement', image: 'images/cloud-guys-social-1.jpg', accent: '#0EA5E9', icon: '☁', format: 'Feed Post' },
+      { label: 'Cloud Tip of the Day',  image: 'images/cloud-guys-social-2.jpg', accent: '#38BDF8', icon: '☁', format: 'Carousel' },
       { label: 'Member Spotlight',      bg: 'linear-gradient(135deg,#020b18 0%,#7DD3FC20 100%)', accent: '#7DD3FC', icon: '☁', format: 'Story' },
       { label: 'Event Promo Card',      bg: 'linear-gradient(135deg,#031020 0%,#0EA5E930 100%)', accent: '#0EA5E9', icon: '☁', format: 'Reel Cover' },
     ],
