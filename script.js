@@ -25,10 +25,10 @@ const PROJECTS = [
     outcome: 'A complete identity system: logo suite across all lockups, full colour and typography guide, packaging mockups, brand voice and messaging framework, and a 60-day social media content kit with 40+ ready-to-use templates.',
     metrics: ['Full identity in 3 weeks', 'Packaging print-ready', '20+ social templates', 'Portfolio centrepiece'],
     socialDesigns: [
-      { label: 'Product Launch Post', bg: 'linear-gradient(135deg,#1a0d2e 0%,#9333EA30 100%)', accent: '#9333EA', icon: '✦', format: 'Feed Post' },
-      { label: 'Skincare Tip Card',   bg: 'linear-gradient(135deg,#2d1060 0%,#F9A8D418 100%)', accent: '#F9A8D4', icon: '✦', format: 'Carousel' },
-      { label: 'Brand Story Cover',   bg: 'linear-gradient(135deg,#1a0d2e 0%,#C084FC28 100%)', accent: '#C084FC', icon: '✦', format: 'Reel Cover' },
-      { label: 'Ingredients Feature', bg: 'linear-gradient(135deg,#0f0820 0%,#9333EA20 100%)', accent: '#A855F7', icon: '✦', format: 'Story' },
+      { label: 'Awareness Campaign', images: 'images/social-media-1.jpg', accent: '#9333EA', icon: '✦', format: 'Feed Post' },
+      { label: 'Product Advertisement',   images: 'images/social-media-2.jpg', accent: '#F9A8D4', icon: '✦', format: 'feed Post' },
+      { label: 'Event Promotion',   images: 'images/social-media-3.jpg', accent: '#C084FC', icon: '✦', format: 'Feed Post' },
+      { label: 'Photography Studio Marketing Flyer', images: 'images/social-media-4.jpg', accent: '#A855F7', icon: '✦', format: 'Feed Post' },
     ],
   },
   {
@@ -49,9 +49,9 @@ const PROJECTS = [
     metrics: ['Community of 500+ members', 'Cross-platform brand consistency', 'Recognition within 2 weeks of launch', 'Active daily content system'],
     socialDesigns: [
       { label: 'Community Announcement', image: 'images/cloud-guys-social-1.jpg', accent: '#0EA5E9', icon: '☁', format: 'Feed Post' },
-      { label: 'Cloud Tip of the Day',  image: 'images/cloud-guys-social-2.jpg', accent: '#38BDF8', icon: '☁', format: 'Carousel' },
-      { label: 'Member Spotlight',      bg: 'linear-gradient(135deg,#020b18 0%,#7DD3FC20 100%)', accent: '#7DD3FC', icon: '☁', format: 'Story' },
-      { label: 'Event Promo Card',      bg: 'linear-gradient(135deg,#031020 0%,#0EA5E930 100%)', accent: '#0EA5E9', icon: '☁', format: 'Reel Cover' },
+      { label: 'Cloud Tip of the Day',  image: 'images/cloud-guys-social-2.jpg', accent: '#38BDF8', icon: '☁', format: 'Feed Post' },
+      { label: 'Property Listing Social Campaign',      images: 'images/real-estate-1', accent: '#7DD3FC', icon: '☁', format: 'Carousel' },
+      { label: 'Luxury Real Estate Social Campaign',      images: 'images/real-estate-2', accent: '#0EA5E9', icon: '☁', format: 'Carousel' },
     ],
   },
 ];
@@ -378,11 +378,9 @@ function buildSocialCard(design, project) {
     },
   }, design.format.toUpperCase());
 
-  const overlay = el('div', { class: 'social-card-hover-overlay' },
-    el('span', { class: 'social-card-hover-text' }, 'Add your design')
-  );
+  
 
-  visual.append(gridLines, icon, badge, overlay);
+  visual.append(gridLines, icon, badge);
 
   // Meta
   const meta = el('div', { class: 'social-card-meta' });
