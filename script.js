@@ -25,10 +25,10 @@ const PROJECTS = [
     outcome: 'A complete identity system: logo suite across all lockups, full colour and typography guide, packaging mockups, brand voice and messaging framework, and a 60-day social media content kit with 40+ ready-to-use templates.',
     metrics: ['Full identity in 3 weeks', 'Packaging print-ready', '20+ social templates', 'Portfolio centrepiece'],
     socialDesigns: [
-      { label: 'Awareness Campaign', images: 'images/social-media-1.jpg', accent: '#9333EA', icon: '✦', format: 'Feed Post' },
-      { label: 'Product Advertisement',   images: 'images/social-media-2.jpg', accent: '#F9A8D4', icon: '✦', format: 'feed Post' },
-      { label: 'Event Promotion',   images: 'images/social-media-3.jpg', accent: '#C084FC', icon: '✦', format: 'Feed Post' },
-      { label: 'Photography Studio Marketing Flyer', images: 'images/social-media-4.jpg', accent: '#A855F7', icon: '✦', format: 'Feed Post' },
+      { label: 'Awareness Campaign', image: 'images/social-media-1.jpg', accent: '#9333EA', icon: '✦', format: 'Feed Post' },
+      { label: 'Product Advertisement',   image: 'images/social-media-2.jpg', accent: '#F9A8D4', icon: '✦', format: 'Feed Post' },
+      { label: 'Event Promotion',   image: 'images/social-media-3.jpg', accent: '#C084FC', icon: '✦', format: 'Feed Post' },
+      { label: 'Photography Studio Marketing Flyer', image: 'images/social-media-4.jpg', accent: '#A855F7', icon: '✦', format: 'Feed Post' },
     ],
   },
   {
@@ -50,8 +50,8 @@ const PROJECTS = [
     socialDesigns: [
       { label: 'Community Announcement', image: 'images/cloud-guys-social-1.jpg', accent: '#0EA5E9', icon: '☁', format: 'Feed Post' },
       { label: 'Cloud Tip of the Day',  image: 'images/cloud-guys-social-2.jpg', accent: '#38BDF8', icon: '☁', format: 'Feed Post' },
-      { label: 'Property Listing Social Campaign',      images: 'images/real-estate-1', accent: '#7DD3FC', icon: '☁', format: 'Carousel' },
-      { label: 'Luxury Real Estate Social Campaign',      images: 'images/real-estate-2', accent: '#0EA5E9', icon: '☁', format: 'Carousel' },
+      { label: 'Property Listing Social Campaign',      image: 'images/real-estate-1.jpg', accent: '#7DD3FC', icon: '☁', format: 'Carousel' },
+      { label: 'Luxury Real Estate Social Campaign',      image: 'images/real-estate-2.jpg', accent: '#0EA5E9', icon: '☁', format: 'Carousel' },
     ],
   },
 ];
@@ -384,12 +384,8 @@ function buildSocialCard(design, project) {
 
   // Meta
   const meta = el('div', { class: 'social-card-meta' });
-  const projLabel = el('div', {
-    class: 'social-card-project',
-    style: { color: design.accent },
-  }, project.title);
   const label = el('div', { class: 'social-card-label' }, design.label);
-  meta.append(projLabel, label);
+  meta.append(label);
 
   card.append(visual, meta);
   return card;
@@ -556,7 +552,13 @@ function populateCaseStudy(project) {
       },
     });
 
-    const icon = el('div', {
+    const icon = d.image
+  ? el('img', {
+      src: d.image,
+      alt: d.label,
+      style: { width:'100%', height:'100%', objectFit:'cover', position:'absolute', inset:'0', top:'0', left:'0' },
+    })
+  : el('div', {
       class: 'cs-social-card-icon',
       style: {
         background: hexAlpha(d.accent, 0.12),
