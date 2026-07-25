@@ -584,13 +584,28 @@ function populateCaseStudy(project) {
   });
 
   // ── Mockup placeholder
-  const mockupLogo = $('#cs-mockup-logo');
-  mockupLogo.textContent  = project.title[0];
-  mockupLogo.style.background = project.color;
-
   const mockup = $('#cs-mockup');
-  mockup.style.background = `linear-gradient(135deg, ${project.heroBg} 0%, ${hexAlpha(project.color, 0.08)} 100%)`;
+const mockupInner = mockup.querySelector('.cs-mockup-inner');
 
+if (project.id === 'luvana') {
+  mockupInner.innerHTML = `
+    <img src="images/luvana-mockup-1.jpg" alt="Luvana packaging mockup" style="width:100%;border-radius:12px;margin-bottom:16px;display:block;" />
+    <img src="images/luvana-mockup-2.jpg" alt="Luvana business card mockup" style="width:100%;border-radius:12px;display:block;" />
+  `;
+  mockup.style.background = 'transparent';
+  mockup.style.border = 'none';
+  mockup.style.height = 'auto';
+  mockup.style.padding = '0';
+} else if (project.id === 'the-cloud-guys') {
+  mockupInner.innerHTML = `
+    <img src="images/tcg-mockup-1.jpg" alt="The Cloud Guys t-shirt mockup" style="width:100%;border-radius:12px;margin-bottom:16px;display:block;" />
+    <img src="images/tcg-mockup-2.jpg" alt="The Cloud Guys sticker mockup" style="width:100%;border-radius:12px;display:block;" />
+  `;
+  mockup.style.background = 'transparent';
+  mockup.style.border = 'none';
+  mockup.style.height = 'auto';
+  mockup.style.padding = '0';
+}
   // ── Prev / Next
   const prevBtn = $('#cs-prev-btn');
   const nextBtn = $('#cs-next-btn');
