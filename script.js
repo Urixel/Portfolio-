@@ -354,14 +354,20 @@ function buildSocialCard(design, project) {
     },
   });
 
-  const icon = el('div', {
-    class: 'social-card-icon',
-    style: {
-      background: hexAlpha(design.accent, 0.12),
-      borderColor: hexAlpha(design.accent, 0.35),
-      color: design.accent,
-    },
-  }, design.icon);
+  const icon = design.image
+  ? el('img', {
+      src: design.image,
+      alt: design.label,
+      style: { width:'100%', height:'100%', objectFit:'cover', position:'absolute', inset:'0', top:'0', left:'0' },
+    })
+  : el('div', {
+      class: 'social-card-icon',
+      style: {
+        background: hexAlpha(design.accent, 0.12),
+        borderColor: hexAlpha(design.accent, 0.35),
+        color: design.accent,
+      },
+    }, design.icon);
 
   const badge = el('div', {
     class: 'social-card-format-badge',
