@@ -378,11 +378,9 @@ function buildSocialCard(design, project) {
     },
   }, design.format.toUpperCase());
 
-  const overlay = el('div', { class: 'social-card-hover-overlay' },
-    el('span', { class: 'social-card-hover-text' }, 'Add your design')
-  );
+  
 
-  visual.append(gridLines, icon, badge, overlay);
+  visual.append(gridLines, icon, badge);
 
   // Meta
   const meta = el('div', { class: 'social-card-meta' });
