@@ -174,7 +174,7 @@ function initNav() {
 function showHome() {
   $('#home-page').hidden = false;
   $('#case-study-page').hidden = true;
-  document.title = 'Praise Emetie — Brand Identity Designer & Creative Strategist';
+  document.title = 'Praise Eric — Brand Identity Designer & Creative Strategist';
   // Re-observe fade-ins that may have been freshly shown
   requestAnimationFrame(observeFadeIns);
 }
@@ -184,7 +184,7 @@ function showCaseStudy(project) {
   $('#case-study-page').hidden = false;
   populateCaseStudy(project);
   window.scrollTo({ top: 0, behavior: 'instant' });
-  document.title = `${project.title} — Praise Emetie`;
+  document.title = `${project.title} — Praise Eric`;
   // Observe new fade-in elements
   requestAnimationFrame(observeFadeIns);
 }
