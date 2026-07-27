@@ -14,7 +14,7 @@ const PROJECTS = [
     industry: 'Skincare / Beauty',
     type: 'Personal Project',
     category: 'Brand Identity',
-    summary: 'A self-initiated branding project that built a natural skincare brand from the ground up, creating a cohesive visual system spanning brand strategy, positioning, naming, packaging, and social media direction.
+    summary: 'A self-initiated branding project that built a natural skincare brand from the ground up, creating a cohesive visual system spanning brand strategy, positioning, naming, packaging, and social media direction.',
     color: '#9333EA',
     accent: '#F9A8D4',
     tags: ['Brand Identity', 'Packaging', 'Social Media', 'Personal Project'],
@@ -576,7 +576,8 @@ if (project.id !== 'luvana') {
 
     visual.append(gridLines, icon, fmt);
 
-    const meta = el('div', { class: 'cs-social-card-meta' }, d.label);
+    const card = el('div', { class: 'cs-social-card' });
+     const meta = el('div', { class: 'cs-social-card-meta' }, d.label);
     card.append(visual, meta);
     csSocialGrid.appendChild(card);
   });
