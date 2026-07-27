@@ -14,16 +14,16 @@ const PROJECTS = [
     industry: 'Skincare / Beauty',
     type: 'Personal Project',
     category: 'Brand Identity',
-    summary: 'A personal brand identity project — crafting a full visual language for a natural skincare brand from positioning and naming through to packaging and social media direction.',
+    summary: 'A self-initiated branding project that built a natural skincare brand from the ground up, creating a cohesive visual system spanning brand strategy, positioning, naming, packaging, and social media direction.
     color: '#9333EA',
     accent: '#F9A8D4',
     tags: ['Brand Identity', 'Packaging', 'Social Media', 'Personal Project'],
-    year: '2024',
+    year: '2026',
     heroBg: '#1a0d2e',
-    challenge: 'The beauty market is saturated with either clinical minimalism or maximalist luxury. Luvana needed to occupy a distinct third space: confident, natural, and accessible — premium without being pretentious, warm without being cheap.',
-    process: "I defined the brand around one truth: 'Confidence in your natural glow.' From there I built a palette of deep plum, orchid, petal blush, and dusty slate — colours that feel skincare-specific without mimicking competitors. Typography paired a refined serif for headlines with a clean humanist sans for body copy. Every asset was designed to scale from a 1080×1080 Instagram post to physical packaging.",
-    outcome: 'A complete identity system: logo suite across all lockups, full colour and typography guide, packaging mockups, brand voice and messaging framework, and a 60-day social media content kit with 40+ ready-to-use templates.',
-    metrics: ['Full identity in 3 weeks', 'Packaging print-ready', '20+ social templates', 'Portfolio centrepiece'],
+    challenge: 'The beauty market is saturated with either clinical minimalism or maximalist luxury. Luvana needed to occupy a distinct third space: confident, natural, and accessible without being pretentious, warm without being cheap.',
+    process: "I defined the brand around one truth: 'Confidence in your natural glow.' From there I built a palette of deep plum, orchid, petal blush, and dusty slate. These colours feel skincare-specific without mimicking competitors. Typography paired a refined serif for headlines with a clean humanist sans for body copy. Every asset was designed to scale from a 1080×1080 Instagram post to physical packaging.",
+    outcome: 'A complete identity system: logo suite across all lockups, full colour and typography guide, packaging mockups, brand voice and messaging framework, and a 30-day social media content kit with 20+ ready-to-use templates.',
+    metrics: ['Full identity in 6 weeks', 'Packaging print-ready', '20+ social templates', 'Portfolio centrepiece'],
     socialDesigns: [
       { label: 'Awareness Campaign', image: 'images/social-media-1.jpg', accent: '#9333EA', icon: '✦', format: 'Feed Post' },
       { label: 'Product Advertisement',   image: 'images/social-media-2.jpg', accent: '#F9A8D4', icon: '✦', format: 'Feed Post' },
@@ -37,16 +37,16 @@ const PROJECTS = [
     industry: 'Tech Community / Online',
     type: 'Client Project',
     category: 'Brand Identity',
-    summary: 'Brand identity for a real, active online tech community — building a visual language that communicates expertise, approachability, and community spirit for cloud computing enthusiasts.',
+    summary: 'Brand identity for a real, active online tech community. I built a visual language that communicates expertise, approachability, and community spirit for cloud computing enthusiasts.',
     color: '#0EA5E9',
     accent: '#38BDF8',
     tags: ['Brand Identity', 'Community Brand', 'Social Media', 'Digital'],
-    year: '2024',
+    year: '2026',
     heroBg: '#020b18',
     challenge: "Tech communities often default to sterile, corporate-looking branding that alienates the very people they're trying to attract. The Cloud Guys needed to feel credible and knowledgeable, but also warm, human, and genuinely fun to be part of.",
-    process: "I began with a deep audit of how the community actually spoke — their tone in posts, how members described the group, what kept people coming back. The insight: cloud tech is often taught with intimidation; The Cloud Guys do the opposite. The visual identity had to embody that contrast. I chose sky-to-midnight blue gradients, a bold geometric wordmark, and a supporting icon language built around cloud forms, network nodes, and elevation metaphors.",
+    process: "I began with a deep audit of how the community actually spoke. I focused on how members described the group, what kept people coming back. The insight: cloud tech is often taught with intimidation; The Cloud Guys do the opposite. The visual identity had to embody that contrast. I chose sky-to-midnight blue gradients, a bold geometric wordmark, and a supporting icon language built around cloud forms, and friendly feels.",
     outcome: 'A full community brand system: primary logo with variants, a social media identity system, profile and banner templates across platforms, content card templates, community swag concepts, and a tone-of-voice guide that helps moderators and content creators stay on-brand.',
-    metrics: ['Community of 500+ members', 'Cross-platform brand consistency', 'Recognition within 2 weeks of launch', 'Active daily content system'],
+    metrics: ['Community of 50+ members', 'Cross-platform brand consistency', 'Recognition within 2 weeks of launch', 'Active daily content system'],
     socialDesigns: [
       { label: 'Community Announcement', image: 'images/cloud-guys-social-1.jpg', accent: '#0EA5E9', icon: '☁', format: 'Feed Post' },
       { label: 'Cloud Tip of the Day',  image: 'images/cloud-guys-social-2.jpg', accent: '#38BDF8', icon: '☁', format: 'Feed Post' },
@@ -597,7 +597,7 @@ if (project.id === 'luvana') {
   mockup.style.padding = '0';
 } else if (project.id === 'the-cloud-guys') {
   mockupInner.innerHTML = `
-    <img src="images/tcg-mockup-1.jpg" alt="The Cloud Guys t-shirt mockup" style="width:100%;border-radius:12px;margin-bottom:16px;display:block;" />
+   <img src="images/tcg-mockup-1.jpg" alt="The Cloud Guys t-shirt mockup" style="width:100%;border-radius:12px;margin-bottom:16px;display:block;" />
     <img src="images/tcg-mockup-2.jpg" alt="The Cloud Guys sticker mockup" style="width:100%;border-radius:12px;display:block;" />
   `;
   mockup.style.background = 'transparent';
