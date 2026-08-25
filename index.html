@@ -92,22 +92,100 @@
         <a href="#contact" class="btn btn-ghost">Contact Me</a>
       </div>
 
-      <div class="hero-stats">
-        <div class="stat-item"><span class="stat-val">3+</span><span class="stat-label">Years Experience</span></div>
-        <div class="stat-item"><span class="stat-val">2</span><span class="stat-label">Featured Projects</span></div>
-        <div class="stat-item"><span class="stat-val">100%</span><span class="stat-label">Client Satisfaction</span></div>
-        <div class="stat-item"><span class="stat-val">Remote</span><span class="stat-label">Worldwide</span></div>
-      </div>
     </div>
   </section>
+  
+  <!-- ── RADIAL METRICS ────────────────────────────────────── -->
+  <section class="metrics-section" aria-label="Portfolio metrics">
+    <div class="metrics-inner">
 
-  <!-- ── TICKER ────────────────────────────────────────────── -->
-  <div class="ticker-wrap" aria-hidden="true">
-    <div class="ticker-track" id="ticker-track">
-      <!-- injected by JS -->
+      <!-- 01 Years Experience -->
+      <div class="metric-item fade-in" aria-label="3 plus years of experience">
+        <div class="metric-ring-wrap">
+          <svg class="metric-ring" viewBox="0 0 120 120" aria-hidden="true">
+            <circle class="metric-ring-track" cx="60" cy="60" r="50"/>
+            <circle class="metric-ring-fill" cx="60" cy="60" r="50"
+              stroke="#2563EB"
+              stroke-dasharray="314"
+              stroke-dashoffset="314"
+              data-target="220"/>
+          </svg>
+          <div class="metric-ring-inner">
+            <span class="metric-num" data-value="3" data-suffix="+">0</span>
+          </div>
+        </div>
+        <div class="metric-label-wrap">
+          <span class="metric-index">01</span>
+          <span class="metric-label">Years<br>Experience</span>
+        </div>
+      </div>
+
+      <!-- 02 Client Satisfaction -->
+      <div class="metric-item fade-in" style="transition-delay:.12s" aria-label="100 percent client satisfaction">
+        <div class="metric-ring-wrap">
+          <svg class="metric-ring" viewBox="0 0 120 120" aria-hidden="true">
+            <circle class="metric-ring-track" cx="60" cy="60" r="50"/>
+            <circle class="metric-ring-fill" cx="60" cy="60" r="50"
+              stroke="#10B981"
+              stroke-dasharray="314"
+              stroke-dashoffset="314"
+              data-target="0"/>
+          </svg>
+          <div class="metric-ring-inner">
+            <span class="metric-num" data-value="100" data-suffix="%">0</span>
+          </div>
+        </div>
+        <div class="metric-label-wrap">
+          <span class="metric-index">02</span>
+          <span class="metric-label">Client<br>Satisfaction</span>
+        </div>
+      </div>
+
+      <!-- 03 Featured Projects -->
+      <div class="metric-item fade-in" style="transition-delay:.24s" aria-label="2 featured projects">
+        <div class="metric-ring-wrap">
+          <svg class="metric-ring" viewBox="0 0 120 120" aria-hidden="true">
+            <circle class="metric-ring-track" cx="60" cy="60" r="50"/>
+            <circle class="metric-ring-fill" cx="60" cy="60" r="50"
+              stroke="#9333EA"
+              stroke-dasharray="314"
+              stroke-dashoffset="314"
+              data-target="157"/>
+          </svg>
+          <div class="metric-ring-inner">
+            <span class="metric-num" data-value="2" data-suffix="">0</span>
+          </div>
+        </div>
+        <div class="metric-label-wrap">
+          <span class="metric-index">03</span>
+          <span class="metric-label">Featured<br>Projects</span>
+        </div>
+      </div>
+
+      <!-- 04 Remote Global -->
+      <div class="metric-item fade-in" style="transition-delay:.36s" aria-label="Global remote availability">
+        <div class="metric-ring-wrap">
+          <svg class="metric-ring" viewBox="0 0 120 120" aria-hidden="true">
+            <circle class="metric-ring-track" cx="60" cy="60" r="50"/>
+            <circle class="metric-ring-fill" cx="60" cy="60" r="50"
+              stroke="#0EA5E9"
+              stroke-dasharray="314"
+              stroke-dashoffset="94"
+              data-target="94"
+              data-static="true"/>
+          </svg>
+          <div class="metric-ring-inner">
+            <span class="metric-num metric-num--text">Global</span>
+          </div>
+        </div>
+        <div class="metric-label-wrap">
+          <span class="metric-index">04</span>
+          <span class="metric-label">Remote<br>Availability</span>
+        </div>
+      </div>
+
     </div>
-  </div>
-
+  </section>
   <!-- ── WORK ─────────────────────────────────────────────── -->
   <section id="work" class="section work-section" aria-label="Featured work">
     <div class="container">
