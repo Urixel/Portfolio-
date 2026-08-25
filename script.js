@@ -793,9 +793,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // 5. Projects grid
   initProjectsGrid();
 
-  // 6. Social showcase
-  initSocialShowcase();
-
    // 6b. Category cards
   initCategoryCards();
 
