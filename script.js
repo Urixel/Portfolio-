@@ -388,7 +388,49 @@ function buildSocialCard(design, project) {
   card.append(visual, meta);
   return card;
 }
+/* ─── SOCIAL CATEGORY PAGE ───────────────────────────────── */
 
+function initCategoryCards() {
+  // Category card clicks → open category page
+  $$('.category-card').forEach(card => {
+    card.addEventListener('click', () => {
+      const category = card.dataset.category;
+      showCategoryPage(category);
+    });
+  });
+
+  // Back button
+  $('#cat-back-btn').addEventListener('click', () => {
+    showHome();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
+
+function showCategoryPage(category) {
+  // Hide all pages
+  $('#home-page').hidden = true;
+  $('#case-study-page').hidden = true;
+  $('#category-page').hidden = false;
+
+  // Update header label and title
+  const titles = {
+    'instagram-posts': 'Instagram Posts',
+    'ad-flyers':       'Advertisement Flyers',
+    'ig-stories':      'Instagram Stories',
+  };
+
+  const title = titles[category] || 'Social Media Designs';
+  $('#cat-label').textContent = title;
+  $('#cat-title').textContent = title;
+
+  // Hide all sections then show only the matching one
+  $$('.cat-section').forEach(sec => sec.style.display = 'none');
+  const target = $(`#cat-sec-${category}`);
+  if (target) target.style.display = 'block';
+
+  window.scrollTo({ top: 0, behavior: 'instant' });
+  requestAnimationFrame(observeFadeIns);
+}
 function initSocialShowcase() {
   const grid = $('#social-grid');
   const prevBtn = $('#social-prev-btn');
@@ -753,6 +795,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 6. Social showcase
   initSocialShowcase();
+
+   // 6b. Category cards
+  initCategoryCards();
 
   // 7. Contact form
   initContactForm();
