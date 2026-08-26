@@ -54,10 +54,6 @@ const PROJECTS = [
   },
 ];
 
-const TICKER_ITEMS = [
-  'Brand Identity', 'Visual Strategy', 'Creative Direction', 'Design Systems',
-  'Figma', 'AI Workflows', 'Packaging', 'Typography', 'Logo Design', 'Brand Voice',
-];
 
 /* ─── UTILITIES ──────────────────────────────────────────── */
 
@@ -189,20 +185,56 @@ function showCaseStudy(project) {
   requestAnimationFrame(observeFadeIns);
 }
 
-/* ─── TICKER ─────────────────────────────────────────────── */
+/* ─── RADIAL METRICS ─────────────────────────────────────── */
 
-function initTicker() {
-  const track = $('#ticker-track');
-  // Double the items for seamless loop
-  const allItems = [...TICKER_ITEMS, ...TICKER_ITEMS];
+function initMetrics() {
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  allItems.forEach((text, i) => {
-    const item = el('span', { class: 'ticker-item' },
-      el('span', { class: `ticker-dot${i % 5 === 0 ? ' accent' : ''}` }),
-      text
-    );
-    track.appendChild(item);
-  });
+  function countUp(el, target, suffix, duration) {
+    if (prefersReduced) { el.textContent = target + suffix; return; }
+    const start = performance.now();
+    function step(now) {
+      const elapsed = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - elapsed, 3);
+      el.textContent = Math.round(eased * target) + suffix;
+      if (elapsed < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  function drawRing(circle, targetOffset) {
+    if (prefersReduced) { circle.style.strokeDashoffset = targetOffset; return; }
+    requestAnimationFrame(() => {
+      circle.style.strokeDashoffset = targetOffset;
+    });
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      observer.unobserve(entry.target);
+
+      const item = entry.target;
+      const ring = item.querySelector('.metric-ring-fill');
+      const numEl = item.querySelector('.metric-num:not(.metric-num--text)');
+
+      if (ring) {
+        const targetOffset = parseFloat(ring.dataset.target ?? '0');
+        const isStatic = ring.dataset.static === 'true';
+        if (!isStatic) {
+          setTimeout(() => drawRing(ring, targetOffset), 80);
+        }
+      }
+
+      if (numEl) {
+        const value  = parseInt(numEl.dataset.value, 10);
+        const suffix = numEl.dataset.suffix || '';
+        setTimeout(() => countUp(numEl, value, suffix, 1000), 120);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  $$('.metric-item').forEach(item => observer.observe(item));
 }
 
 /* ─── HERO WORD ROTATOR ──────────────────────────────────── */
@@ -783,9 +815,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 2. Navigation
   initNav();
-
-  // 3. Ticker
-  initTicker();
+   
+  // 3. Radial metrics
+  initMetrics();
 
   // 4. Hero word rotator
   initHeroWord();
