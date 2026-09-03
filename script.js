@@ -14,21 +14,21 @@ const PROJECTS = [
     industry: 'Skincare / Beauty',
     type: 'Personal Project',
     category: 'Brand Identity',
-    summary: 'A personal brand identity project — crafting a full visual language for a natural skincare brand from positioning and naming through to packaging and social media direction.',
+    summary: 'A self-initiated branding project that built a natural skincare brand from the ground up, creating a cohesive visual system spanning brand strategy, positioning, naming, packaging, and social media direction.',
     color: '#9333EA',
     accent: '#F9A8D4',
     tags: ['Brand Identity', 'Packaging', 'Social Media', 'Personal Project'],
-    year: '2024',
+    year: '2026',
     heroBg: '#1a0d2e',
-    challenge: 'The beauty market is saturated with either clinical minimalism or maximalist luxury. Luvana needed to occupy a distinct third space: confident, natural, and accessible — premium without being pretentious, warm without being cheap.',
-    process: "I defined the brand around one truth: 'Confidence in your natural glow.' From there I built a palette of deep plum, orchid, petal blush, and dusty slate — colours that feel skincare-specific without mimicking competitors. Typography paired a refined serif for headlines with a clean humanist sans for body copy. Every asset was designed to scale from a 1080×1080 Instagram post to physical packaging.",
-    outcome: 'A complete identity system: logo suite across all lockups, full colour and typography guide, packaging mockups, brand voice and messaging framework, and a 60-day social media content kit with 40+ ready-to-use templates.',
-    metrics: ['Full identity in 3 weeks', 'Packaging print-ready', '20+ social templates', 'Portfolio centrepiece'],
+    challenge: 'The beauty market is saturated with either clinical minimalism or maximalist luxury. Luvana needed to occupy a distinct third space: confident, natural, and accessible without being pretentious, warm without being cheap.',
+    process: "I defined the brand around one truth: 'Confidence in your natural glow.' From there I built a palette of deep plum, orchid, petal blush, and dusty slate. These colours feel skincare-specific without mimicking competitors. Typography paired a refined serif for headlines with a clean humanist sans for body copy. Every asset was designed to scale from a 1080×1080 Instagram post to physical packaging.",
+    outcome: 'A complete identity system: logo suite across all lockups, full colour and typography guide, packaging mockups, brand voice and messaging framework, and a 30-day social media content kit with 20+ ready-to-use templates.',
+    metrics: ['Full identity in 6 weeks', 'Packaging print-ready', '20+ social templates', 'Portfolio centrepiece'],
     socialDesigns: [
-      { label: 'Awareness Campaign', images: 'images/social-media-1.jpg', accent: '#9333EA', icon: '✦', format: 'Feed Post' },
-      { label: 'Product Advertisement',   images: 'images/social-media-2.jpg', accent: '#F9A8D4', icon: '✦', format: 'feed Post' },
-      { label: 'Event Promotion',   images: 'images/social-media-3.jpg', accent: '#C084FC', icon: '✦', format: 'Feed Post' },
-      { label: 'Photography Studio Marketing Flyer', images: 'images/social-media-4.jpg', accent: '#A855F7', icon: '✦', format: 'Feed Post' },
+      { label: 'Awareness Campaign', image: 'images/social-media-1.jpg', accent: '#9333EA', icon: '✦', format: 'Feed Post' },
+      { label: 'Product Advertisement',   image: 'images/social-media-2.jpg', accent: '#F9A8D4', icon: '✦', format: 'Feed Post' },
+      { label: 'Event Promotion',   image: 'images/social-media-3.jpg', accent: '#C084FC', icon: '✦', format: 'Feed Post' },
+      { label: 'Photography Studio Marketing Flyer', image: 'images/social-media-4.jpg', accent: '#A855F7', icon: '✦', format: 'Feed Post' },
     ],
   },
   {
@@ -37,29 +37,23 @@ const PROJECTS = [
     industry: 'Tech Community / Online',
     type: 'Client Project',
     category: 'Brand Identity',
-    summary: 'Brand identity for a real, active online tech community — building a visual language that communicates expertise, approachability, and community spirit for cloud computing enthusiasts.',
+    summary: 'Brand identity for a real, active online tech community. I built a visual language that communicates expertise, approachability, and community spirit for cloud computing enthusiasts.',
     color: '#0EA5E9',
     accent: '#38BDF8',
     tags: ['Brand Identity', 'Community Brand', 'Social Media', 'Digital'],
-    year: '2024',
+    year: '2026',
     heroBg: '#020b18',
     challenge: "Tech communities often default to sterile, corporate-looking branding that alienates the very people they're trying to attract. The Cloud Guys needed to feel credible and knowledgeable, but also warm, human, and genuinely fun to be part of.",
-    process: "I began with a deep audit of how the community actually spoke — their tone in posts, how members described the group, what kept people coming back. The insight: cloud tech is often taught with intimidation; The Cloud Guys do the opposite. The visual identity had to embody that contrast. I chose sky-to-midnight blue gradients, a bold geometric wordmark, and a supporting icon language built around cloud forms, network nodes, and elevation metaphors.",
+    process: "I began with a deep audit of how the community actually spoke. I focused on how members described the group, what kept people coming back. The insight: cloud tech is often taught with intimidation; The Cloud Guys do the opposite. The visual identity had to embody that contrast. I chose sky-to-midnight blue gradients, a bold geometric wordmark, and a supporting icon language built around cloud forms, and friendly feels.",
     outcome: 'A full community brand system: primary logo with variants, a social media identity system, profile and banner templates across platforms, content card templates, community swag concepts, and a tone-of-voice guide that helps moderators and content creators stay on-brand.',
-    metrics: ['Community of 500+ members', 'Cross-platform brand consistency', 'Recognition within 2 weeks of launch', 'Active daily content system'],
+    metrics: ['Community of 50+ members', 'Cross-platform brand consistency', 'Recognition within 2 weeks of launch', 'Active daily content system'],
     socialDesigns: [
       { label: 'Community Announcement', image: 'images/cloud-guys-social-1.jpg', accent: '#0EA5E9', icon: '☁', format: 'Feed Post' },
       { label: 'Cloud Tip of the Day',  image: 'images/cloud-guys-social-2.jpg', accent: '#38BDF8', icon: '☁', format: 'Feed Post' },
-      { label: 'Property Listing Social Campaign',      images: 'images/real-estate-1', accent: '#7DD3FC', icon: '☁', format: 'Carousel' },
-      { label: 'Luxury Real Estate Social Campaign',      images: 'images/real-estate-2', accent: '#0EA5E9', icon: '☁', format: 'Carousel' },
     ],
   },
 ];
 
-const TICKER_ITEMS = [
-  'Brand Identity', 'Visual Strategy', 'Creative Direction', 'Design Systems',
-  'Figma', 'AI Workflows', 'Packaging', 'Typography', 'Logo Design', 'Brand Voice',
-];
 
 /* ─── UTILITIES ──────────────────────────────────────────── */
 
@@ -176,7 +170,7 @@ function initNav() {
 function showHome() {
   $('#home-page').hidden = false;
   $('#case-study-page').hidden = true;
-  document.title = 'Praise Emetie — Brand Identity Designer & Creative Strategist';
+  document.title = 'Praise Eric — Brand Identity Designer & Creative Strategist';
   // Re-observe fade-ins that may have been freshly shown
   requestAnimationFrame(observeFadeIns);
 }
@@ -186,25 +180,61 @@ function showCaseStudy(project) {
   $('#case-study-page').hidden = false;
   populateCaseStudy(project);
   window.scrollTo({ top: 0, behavior: 'instant' });
-  document.title = `${project.title} — Praise Emetie`;
+  document.title = `${project.title} — Praise Eric`;
   // Observe new fade-in elements
   requestAnimationFrame(observeFadeIns);
 }
 
-/* ─── TICKER ─────────────────────────────────────────────── */
+/* ─── RADIAL METRICS ─────────────────────────────────────── */
 
-function initTicker() {
-  const track = $('#ticker-track');
-  // Double the items for seamless loop
-  const allItems = [...TICKER_ITEMS, ...TICKER_ITEMS];
+function initMetrics() {
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  allItems.forEach((text, i) => {
-    const item = el('span', { class: 'ticker-item' },
-      el('span', { class: `ticker-dot${i % 5 === 0 ? ' accent' : ''}` }),
-      text
-    );
-    track.appendChild(item);
-  });
+  function countUp(el, target, suffix, duration) {
+    if (prefersReduced) { el.textContent = target + suffix; return; }
+    const start = performance.now();
+    function step(now) {
+      const elapsed = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - elapsed, 3);
+      el.textContent = Math.round(eased * target) + suffix;
+      if (elapsed < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  function drawRing(circle, targetOffset) {
+    if (prefersReduced) { circle.style.strokeDashoffset = targetOffset; return; }
+    requestAnimationFrame(() => {
+      circle.style.strokeDashoffset = targetOffset;
+    });
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      observer.unobserve(entry.target);
+
+      const item = entry.target;
+      const ring = item.querySelector('.metric-ring-fill');
+      const numEl = item.querySelector('.metric-num:not(.metric-num--text)');
+
+      if (ring) {
+        const targetOffset = parseFloat(ring.dataset.target ?? '0');
+        const isStatic = ring.dataset.static === 'true';
+        if (!isStatic) {
+          setTimeout(() => drawRing(ring, targetOffset), 80);
+        }
+      }
+
+      if (numEl) {
+        const value  = parseInt(numEl.dataset.value, 10);
+        const suffix = numEl.dataset.suffix || '';
+        setTimeout(() => countUp(numEl, value, suffix, 1000), 120);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  $$('.metric-item').forEach(item => observer.observe(item));
 }
 
 /* ─── HERO WORD ROTATOR ──────────────────────────────────── */
@@ -384,41 +414,119 @@ function buildSocialCard(design, project) {
 
   // Meta
   const meta = el('div', { class: 'social-card-meta' });
-  const projLabel = el('div', {
-    class: 'social-card-project',
-    style: { color: design.accent },
-  }, project.title);
   const label = el('div', { class: 'social-card-label' }, design.label);
-  meta.append(projLabel, label);
+  meta.append(label);
 
   card.append(visual, meta);
   return card;
 }
+/* ─── SOCIAL CATEGORY PAGE ───────────────────────────────── */
 
+function initCategoryCards() {
+  // Category card clicks → open category page
+  $$('.category-card').forEach(card => {
+    card.addEventListener('click', () => {
+      const category = card.dataset.category;
+      showCategoryPage(category);
+    });
+  });
+
+  // Back button
+  $('#cat-back-btn').addEventListener('click', () => {
+    showHome();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
+
+function showCategoryPage(category) {
+  // Hide all pages
+  $('#home-page').hidden = true;
+  $('#case-study-page').hidden = true;
+  $('#category-page').hidden = false;
+
+  // Update header label and title
+  const titles = {
+    'instagram-posts': 'Instagram Posts',
+    'ad-flyers':       'Advertisement Flyers',
+    'ig-stories':      'Instagram Stories',
+  };
+
+  const title = titles[category] || 'Social Media Designs';
+  $('#cat-label').textContent = title;
+  $('#cat-title').textContent = title;
+
+  // Hide all sections then show only the matching one
+  $$('.cat-section').forEach(sec => sec.style.display = 'none');
+  const target = $(`#cat-sec-${category}`);
+  if (target) target.style.display = 'block';
+
+  window.scrollTo({ top: 0, behavior: 'instant' });
+  requestAnimationFrame(observeFadeIns);
+}
 function initSocialShowcase() {
   const grid = $('#social-grid');
+  const prevBtn = $('#social-prev-btn');
+  const nextBtn = $('#social-next-btn');
+  const indicator = $('#page-indicator');
 
-  // Build all cards
+  const CARDS_PER_PAGE = 4;
+
+  // Collect all designs from both projects into one flat list
+  const allDesigns = [];
   PROJECTS.forEach(project => {
     project.socialDesigns.forEach(design => {
-      grid.appendChild(buildSocialCard(design, project));
+      allDesigns.push({ design, project });
     });
   });
 
-  // Filter buttons
-  $$('.filter-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      $$('.filter-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
+  const totalPages = Math.ceil(allDesigns.length / CARDS_PER_PAGE);
+  let currentPage = 1;
 
-      const filter = btn.dataset.filter;
-
-      $$('.social-card').forEach(card => {
-        const show = filter === 'all' || card.dataset.project === filter;
-        card.classList.toggle('hidden-card', !show);
-      });
-    });
+  // Build all cards once and store them
+  const allCards = allDesigns.map(({ design, project }) => {
+    const card = buildSocialCard(design, project);
+    grid.appendChild(card);
+    return card;
   });
+
+  function showPage(page) {
+    const start = (page - 1) * CARDS_PER_PAGE;
+    const end = start + CARDS_PER_PAGE;
+
+    // Show only cards for the current page
+    allCards.forEach((card, i) => {
+      card.classList.toggle('hidden-card', i < start || i >= end);
+    });
+
+    // Update indicator
+    indicator.textContent = `${page} / ${totalPages}`;
+
+    // Update button states
+    prevBtn.disabled = page === 1;
+    nextBtn.disabled = page === totalPages;
+
+    // Scroll to top of section smoothly
+    $('#social-designs').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  // Previous button
+  prevBtn.addEventListener('click', () => {
+    if (currentPage > 1) {
+      currentPage--;
+      showPage(currentPage);
+    }
+  });
+
+  // Next button
+  nextBtn.addEventListener('click', () => {
+    if (currentPage < totalPages) {
+      currentPage++;
+      showPage(currentPage);
+    }
+  });
+
+  // Show first page on load
+  showPage(1);
 }
 
 /* ─── CASE STUDY ─────────────────────────────────────────── */
@@ -499,9 +607,9 @@ function populateCaseStudy(project) {
 
   // ── Social designs in CS
   const csSocialGrid = $('#cs-social-grid');
-  csSocialGrid.innerHTML = '';
+csSocialGrid.innerHTML = '';
+if (project.id !== 'luvana') {
   project.socialDesigns.forEach(d => {
-    const card = el('div', { class: 'cs-social-card' });
 
     const visual = el('div', {
       class: 'cs-social-card-visual',
@@ -516,7 +624,13 @@ function populateCaseStudy(project) {
       },
     });
 
-    const icon = el('div', {
+    const icon = d.image
+  ? el('img', {
+      src: d.image,
+      alt: d.label,
+      style: { width:'100%', height:'100%', objectFit:'cover', position:'absolute', inset:'0', top:'0', left:'0' },
+    })
+  : el('div', {
       class: 'cs-social-card-icon',
       style: {
         background: hexAlpha(d.accent, 0.12),
@@ -536,19 +650,36 @@ function populateCaseStudy(project) {
 
     visual.append(gridLines, icon, fmt);
 
-    const meta = el('div', { class: 'cs-social-card-meta' }, d.label);
+    const card = el('div', { class: 'cs-social-card' });
+     const meta = el('div', { class: 'cs-social-card-meta' }, d.label);
     card.append(visual, meta);
     csSocialGrid.appendChild(card);
   });
+}
 
   // ── Mockup placeholder
-  const mockupLogo = $('#cs-mockup-logo');
-  mockupLogo.textContent  = project.title[0];
-  mockupLogo.style.background = project.color;
-
   const mockup = $('#cs-mockup');
-  mockup.style.background = `linear-gradient(135deg, ${project.heroBg} 0%, ${hexAlpha(project.color, 0.08)} 100%)`;
+const mockupInner = mockup.querySelector('.cs-mockup-inner');
 
+if (project.id === 'luvana') {
+  mockupInner.innerHTML = `
+    <img src="images/luvana-mockup-1.jpg" alt="Luvana packaging mockup" style="width:100%;border-radius:12px;margin-bottom:16px;display:block;" />
+    <img src="images/luvana-mockup-2.jpg" alt="Luvana business card mockup" style="width:100%;border-radius:12px;display:block;" />
+  `;
+  mockup.style.background = 'transparent';
+  mockup.style.border = 'none';
+  mockup.style.height = 'auto';
+  mockup.style.padding = '0';
+} else if (project.id === 'the-cloud-guys') {
+  mockupInner.innerHTML = `
+   <img src="images/tcg-mockup-1.jpg" alt="The Cloud Guys t-shirt mockup" style="width:100%;border-radius:12px;margin-bottom:16px;display:block;" />
+    <img src="images/tcg-mockup-2.jpg" alt="The Cloud Guys sticker mockup" style="width:100%;border-radius:12px;display:block;" />
+  `;
+  mockup.style.background = 'transparent';
+  mockup.style.border = 'none';
+  mockup.style.height = 'auto';
+  mockup.style.padding = '0';
+}
   // ── Prev / Next
   const prevBtn = $('#cs-prev-btn');
   const nextBtn = $('#cs-next-btn');
@@ -684,9 +815,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 2. Navigation
   initNav();
-
-  // 3. Ticker
-  initTicker();
+   
+  // 3. Radial metrics
+  initMetrics();
 
   // 4. Hero word rotator
   initHeroWord();
@@ -694,8 +825,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // 5. Projects grid
   initProjectsGrid();
 
-  // 6. Social showcase
-  initSocialShowcase();
+   // 6b. Category cards
+  initCategoryCards();
 
   // 7. Contact form
   initContactForm();

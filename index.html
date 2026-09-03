@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Praise Emetie — Brand Identity Designer & Creative Strategist. Helping startups and businesses communicate with clarity, confidence, and visual precision." />
+  <meta name="description" content="Praise Eric — Brand Identity Designer & Creative Strategist. Helping startups and businesses communicate with clarity, confidence, and visual precision." />
   <meta name="keywords" content="brand identity designer, creative strategist, logo design, visual systems, social media design, packaging design" />
-  <meta name="author" content="Praise Emetie" />
+  <meta name="author" content="Praise Eric" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Praise Emetie — Brand Identity Designer & Creative Strategist" />
+  <meta property="og:title" content="Praise Eric — Brand Identity Designer & Creative Strategist" />
   <meta property="og:description" content="Helping startups and businesses communicate with clarity, confidence, and visual precision." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://praiseemetie.github.io" />
@@ -16,10 +16,10 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Praise Emetie — Brand Identity Designer" />
+  <meta name="twitter:title" content="Praise Eric — Brand Identity Designer" />
   <meta name="twitter:description" content="Brand Identity Designer & Creative Strategist" />
 
-  <title>Praise Emetie — Brand Identity Designer & Creative Strategist</title>
+  <title>Praise Eric — Brand Identity Designer & Creative Strategist</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -37,7 +37,7 @@
   <div class="nav-inner">
     <a href="#" class="nav-logo" id="nav-logo-btn" aria-label="Home">
       <div class="nav-logo-mark">P</div>
-      <span class="nav-logo-name">Praise Emetie</span>
+      <span class="nav-logo-name">Praise Eric</span>
     </a>
 
     <div class="desktop-nav" role="menubar">
@@ -92,22 +92,100 @@
         <a href="#contact" class="btn btn-ghost">Contact Me</a>
       </div>
 
-      <div class="hero-stats">
-        <div class="stat-item"><span class="stat-val">3+</span><span class="stat-label">Years Experience</span></div>
-        <div class="stat-item"><span class="stat-val">2</span><span class="stat-label">Featured Projects</span></div>
-        <div class="stat-item"><span class="stat-val">100%</span><span class="stat-label">Client Satisfaction</span></div>
-        <div class="stat-item"><span class="stat-val">Remote</span><span class="stat-label">Worldwide</span></div>
-      </div>
     </div>
   </section>
+  
+  <!-- ── RADIAL METRICS ────────────────────────────────────── -->
+  <section class="metrics-section" aria-label="Portfolio metrics">
+    <div class="metrics-inner">
 
-  <!-- ── TICKER ────────────────────────────────────────────── -->
-  <div class="ticker-wrap" aria-hidden="true">
-    <div class="ticker-track" id="ticker-track">
-      <!-- injected by JS -->
+      <!-- 01 Years Experience -->
+      <div class="metric-item fade-in" aria-label="3 plus years of experience">
+        <div class="metric-ring-wrap">
+          <svg class="metric-ring" viewBox="0 0 120 120" aria-hidden="true">
+            <circle class="metric-ring-track" cx="60" cy="60" r="50"/>
+            <circle class="metric-ring-fill" cx="60" cy="60" r="50"
+              stroke="#2563EB"
+              stroke-dasharray="314"
+              stroke-dashoffset="314"
+              data-target="220"/>
+          </svg>
+          <div class="metric-ring-inner">
+            <span class="metric-num" data-value="3" data-suffix="+">0</span>
+          </div>
+        </div>
+        <div class="metric-label-wrap">
+          <span class="metric-index">01</span>
+          <span class="metric-label">Years<br>Experience</span>
+        </div>
+      </div>
+
+      <!-- 02 Client Satisfaction -->
+      <div class="metric-item fade-in" style="transition-delay:.12s" aria-label="100 percent client satisfaction">
+        <div class="metric-ring-wrap">
+          <svg class="metric-ring" viewBox="0 0 120 120" aria-hidden="true">
+            <circle class="metric-ring-track" cx="60" cy="60" r="50"/>
+            <circle class="metric-ring-fill" cx="60" cy="60" r="50"
+              stroke="#10B981"
+              stroke-dasharray="314"
+              stroke-dashoffset="314"
+              data-target="0"/>
+          </svg>
+          <div class="metric-ring-inner">
+            <span class="metric-num" data-value="100" data-suffix="%">0</span>
+          </div>
+        </div>
+        <div class="metric-label-wrap">
+          <span class="metric-index">02</span>
+          <span class="metric-label">Client<br>Satisfaction</span>
+        </div>
+      </div>
+
+      <!-- 03 Featured Projects -->
+      <div class="metric-item fade-in" style="transition-delay:.24s" aria-label="2 featured projects">
+        <div class="metric-ring-wrap">
+          <svg class="metric-ring" viewBox="0 0 120 120" aria-hidden="true">
+            <circle class="metric-ring-track" cx="60" cy="60" r="50"/>
+            <circle class="metric-ring-fill" cx="60" cy="60" r="50"
+              stroke="#9333EA"
+              stroke-dasharray="314"
+              stroke-dashoffset="314"
+              data-target="157"/>
+          </svg>
+          <div class="metric-ring-inner">
+            <span class="metric-num" data-value="2" data-suffix="">0</span>
+          </div>
+        </div>
+        <div class="metric-label-wrap">
+          <span class="metric-index">03</span>
+          <span class="metric-label">Featured<br>Projects</span>
+        </div>
+      </div>
+
+      <!-- 04 Remote Global -->
+      <div class="metric-item fade-in" style="transition-delay:.36s" aria-label="Global remote availability">
+        <div class="metric-ring-wrap">
+          <svg class="metric-ring" viewBox="0 0 120 120" aria-hidden="true">
+            <circle class="metric-ring-track" cx="60" cy="60" r="50"/>
+            <circle class="metric-ring-fill" cx="60" cy="60" r="50"
+              stroke="#0EA5E9"
+              stroke-dasharray="314"
+              stroke-dashoffset="94"
+              data-target="94"
+              data-static="true"/>
+          </svg>
+          <div class="metric-ring-inner">
+            <span class="metric-num metric-num--text">Global</span>
+          </div>
+        </div>
+        <div class="metric-label-wrap">
+          <span class="metric-index">04</span>
+          <span class="metric-label">Remote<br>Availability</span>
+        </div>
+      </div>
+
     </div>
-  </div>
-
+  </section>
   <!-- ── WORK ─────────────────────────────────────────────── -->
   <section id="work" class="section work-section" aria-label="Featured work">
     <div class="container">
@@ -133,23 +211,38 @@
           <p class="section-label" style="color:#10B981">Social Media Design</p>
           <h2 class="section-title">Content Systems<br>at Scale</h2>
         </div>
-        <div class="social-filters" role="group" aria-label="Filter by project">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="luvana">Luvana</button>
-          <button class="filter-btn" data-filter="the-cloud-guys">The Cloud Guys</button>
+        <div class="social-pagination" role="group" aria-label="Browse designs">
+          <button class="page-btn" id="social-prev-btn" aria-label="Previous page" disabled>← Previous</button>
+          <span class="page-indicator" id="page-indicator">1 / 1</span>
+          <button class="page-btn" id="social-next-btn" aria-label="Next page">Next →</button>
         </div>
       </div>
 
-      <div class="social-grid" id="social-grid">
-        <!-- injected by JS -->
-      </div>
-
-      <p class="social-hint fade-in">Add your real social media design images by replacing the placeholder cards above.</p>
+      <div class="category-grid">
+  <div class="category-card fade-in" data-category="instagram-posts">
+    <div class="category-card-icon">📱</div>
+    <h3 class="category-card-title">Instagram Posts</h3>
+    <p class="category-card-count">5 Designs</p>
+    <span class="category-card-cta">View Designs →</span>
+  </div>
+  <div class="category-card fade-in" style="transition-delay:.1s" data-category="ad-flyers">
+    <div class="category-card-icon">📢</div>
+    <h3 class="category-card-title">Advertisement Flyers</h3>
+    <p class="category-card-count">4 Designs</p>
+    <span class="category-card-cta">View Designs →</span>
+  </div>
+  <div class="category-card fade-in" style="transition-delay:.2s" data-category="ig-stories">
+  <div class="category-card-icon">⬜</div>
+  <h3 class="category-card-title">Instagram Stories</h3>
+  <p class="category-card-count">3 Designs</p>
+  <span class="category-card-cta">View Designs →</span>
+</div>
+</div>
     </div>
   </section>
 
   <!-- ── ABOUT ─────────────────────────────────────────────── -->
-  <section id="about" class="section about-section" aria-label="About Praise Emetie">
+  <section id="about" class="section about-section" aria-label="About Praise Eric">
     <div class="container">
       <div class="fade-in">
         <p class="section-label">About</p>
@@ -160,13 +253,13 @@
         <!-- Photo column -->
         <div class="about-photo-col fade-in">
           <div class="photo-frame" id="photo-frame" aria-label="profile photo placeholder">
-            <img src="images/praise-photo.jpg" alt="Praise Emetie" />
+            <img src="images/praise-photo.jpg" alt="Praise Eric" />
             <div class="photo-corner-tl" aria-hidden="true"></div>
             <div class="photo-corner-br" aria-hidden="true"></div>
           </div>
 
           <div class="name-card">
-            <div class="name-card-name">Praise Emetie</div>
+            <div class="name-card-name">Praise Eric</div>
             <div class="name-card-role">Brand Identity Designer &amp; Creative Strategist</div>
             <div class="name-card-status">
               <span class="pulse-dot" aria-hidden="true"></span>
@@ -411,7 +504,99 @@
   </section>
 
 </main><!-- /#home-page -->
+  
+<!-- ═══════════════════════════════════════════════════════
+     SOCIAL MEDIA CATEGORY PAGE
+════════════════════════════════════════════════════════ -->
+<div id="category-page" hidden aria-label="Social media category">
+  <div class="cat-page-hero">
+    <div class="container">
+      <button class="cs-back-btn" id="cat-back-btn">← Back to Home</button>
+      <p class="section-label" id="cat-label">Instagram Posts</p>
+      <h1 class="cs-title" id="cat-title">Instagram Posts</h1>
+      <p class="cat-subtitle">A collection of social media designs across different projects and clients.</p>
+    </div>
+  </div>
 
+  <div class="container cat-body">
+
+    <!-- Instagram Posts -->
+    <div class="cat-section" id="cat-sec-instagram-posts">
+      <h2 class="cat-section-title">Instagram Posts</h2>
+      <div class="cat-project-grid">
+        <div class="cat-project-card fade-in">
+          <div class="cat-project-cover">
+            <img src="images/ig-post-1.jpg" alt="Luvana Instagram Posts" />
+          </div>
+          <div class="cat-project-meta">
+            <h3 class="cat-project-name">Luvana Instagram Posts</h3>
+            <a href="https://behance.net/praiseemetie" target="_blank" rel="noopener" class="cat-behance-link">View on Behance ↗</a>
+          </div>
+        </div>
+        <div class="cat-project-card fade-in" style="transition-delay:.1s">
+          <div class="cat-project-cover">
+            <img src="images/ig-post-2.jpg" alt="The Cloud Guys Instagram Posts" />
+          </div>
+          <div class="cat-project-meta">
+            <h3 class="cat-project-name">The Cloud Guys Instagram Posts</h3>
+            <a href="https://behance.net/praiseemetie" target="_blank" rel="noopener" class="cat-behance-link">View on Behance ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Advertisement Flyers -->
+    <div class="cat-section" id="cat-sec-ad-flyers">
+      <h2 class="cat-section-title">Advertisement Flyers</h2>
+      <div class="cat-project-grid">
+        <div class="cat-project-card fade-in">
+          <div class="cat-project-cover">
+            <img src="images/ad-flyer-1.jpg" alt="Luvana Advertisement Flyers" />
+          </div>
+          <div class="cat-project-meta">
+            <h3 class="cat-project-name">Luvana Advertisement Flyers</h3>
+            <a href="https://behance.net/praiseemetie" target="_blank" rel="noopener" class="cat-behance-link">View on Behance ↗</a>
+          </div>
+        </div>
+        <div class="cat-project-card fade-in" style="transition-delay:.1s">
+          <div class="cat-project-cover">
+            <img src="images/ad-flyer-2.jpg" alt="The Cloud Guys Advertisement Flyers" />
+          </div>
+          <div class="cat-project-meta">
+            <h3 class="cat-project-name">The Cloud Guys Advertisement Flyers</h3>
+            <a href="https://behance.net/praiseemetie" target="_blank" rel="noopener" class="cat-behance-link">View on Behance ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Instagram Stories -->
+    <div class="cat-section" id="cat-sec-ig-stories">
+      <h2 class="cat-section-title">Instagram Stories</h2>
+      <div class="cat-project-grid">
+        <div class="cat-project-card fade-in">
+  <div class="cat-project-cover cat-project-cover--story">
+    <img src="images/ig-story-luvana.jpg" alt="Luvana Instagram Stories" />
+  </div>
+  <div class="cat-project-meta">
+    <h3 class="cat-project-name">Luvana Instagram Stories</h3>
+    <a href="https://www.behance.net/gallery/YOUR-LUVANA-PROJECT-ID" target="_blank" rel="noopener" class="cat-behance-link">View on Behance ↗</a>
+  </div>
+</div>
+<div class="cat-project-card fade-in" style="transition-delay:.1s">
+  <div class="cat-project-cover cat-project-cover--story">
+    <img src="images/ig-story-cloudguys.jpg" alt="The Cloud Guys Instagram Stories" />
+  </div>
+  <div class="cat-project-meta">
+    <h3 class="cat-project-name">The Cloud Guys Instagram Stories</h3>
+    <a href="https://www.behance.net/gallery/YOUR-CLOUDGUYS-PROJECT-ID" target="_blank" rel="noopener" class="cat-behance-link">View on Behance ↗</a>
+  </div>
+</div>
+      </div>
+    </div>
+
+  </div>
+</div>
 <!-- ═══════════════════════════════════════════════════════════
      CASE STUDY PAGE  (hidden until a project is opened)
 ════════════════════════════════════════════════════════════ -->
@@ -521,10 +706,10 @@
   <div class="container footer-inner">
     <a href="#" class="footer-logo" id="footer-logo-btn" aria-label="Back to top">
       <div class="nav-logo-mark">P</div>
-      <span class="footer-logo-name">Praise Emetie</span>
+      <span class="footer-logo-name">Praise Eric</span>
     </a>
 
-    <p class="footer-copy">© 2026 Praise Emetie · Brand Identity &amp; Creative Strategy</p>
+    <p class="footer-copy">© 2026 Praise Eric · Brand Identity &amp; Creative Strategy</p>
 
     <nav class="footer-links" aria-label="Footer navigation">
       <a href="https://linkedin.com/in/praiseemetie" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
