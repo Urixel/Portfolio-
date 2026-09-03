@@ -1400,17 +1400,17 @@ a.contact-info-val:hover { color: #fff; }
 
 .cat-project-cover {
   width: 100%;
-  aspect-ratio: 1 / 1;
   overflow: hidden;
   background: var(--bg-card);
 }
 .cat-project-cover--story {
-  aspect-ratio: 9 / 16;
+  aspect-ratio: auto;
+  height: auto;
 }
 .cat-project-cover img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   display: block;
   transition: transform 0.4s ease;
 }
