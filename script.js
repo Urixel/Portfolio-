@@ -48,9 +48,9 @@ const PROJECTS = [
     outcome: 'A full community brand system: primary logo with variants, a social media identity system, profile and banner templates across platforms, content card templates, community swag concepts, and a tone-of-voice guide that helps moderators and content creators stay on-brand.',
     metrics: ['Community of 50+ members', 'Cross-platform brand consistency', 'Recognition within 2 weeks of launch', 'Active daily content system'],
     socialDesigns: [
-      { label: 'Community Announcement', image: 'images/cloud-guys-social-1.jpg', accent: '#0EA5E9', icon: '☁', format: 'Feed Post' },
-      { label: 'Cloud Tip of the Day',  image: 'images/cloud-guys-social-2.jpg', accent: '#38BDF8', icon: '☁', format: 'Feed Post' },
-    ],
+  { label: 'The Cloud Guys Instagram Posts', image: 'images/ig-post-cloudguys.jpg', accent: '#0EA5E9', icon: '☁', format: 'Feed Post' },
+  { label: 'The Cloud Guys Instagram Stories', image: 'images/ig-story-cloudguys.jpg', accent: '#38BDF8', icon: '☁', format: 'Feed Post' },
+],
   },
 ];
 
